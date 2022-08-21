@@ -1,0 +1,50 @@
+{
+  "name": "book-sarbinowo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxtremee/book-sarbinowo-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxtremee/book-sarbinowo-backend/issues"
+  },
+  "homepage": "https://github.com/Maxtremee/book-sarbinowo-backend#readme",
+  "prisma": {
+    "seed": "ts-node --require tsconfig-paths/register prisma/seed.ts"
+  },
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "node build/app.js",
+    "dev": "nodemon",
+    "migrate:dev": "prisma migrate dev",
+    "setup": "npx prisma migrate dev && npx prisma db seed",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "node-schedule": "^2.1.0",
+    "react-dom": "^18.2.0",
+    "bcryptjs": "^2.4.3",
+    "winston": "^3.8.1",
+    "dayjs": "^1.11.2",
+    "@prisma/client": "^3.11.1"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^17.0.14",
+    "@types/node": "^18.7.8",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^3.14.1",
+    "typescript": "^4.7.4"
+  }
+}

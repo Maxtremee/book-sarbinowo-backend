@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": [
+      "es6"
+    ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "rootDir": "src",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "outDir": "build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
